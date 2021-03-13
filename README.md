@@ -6,4 +6,7 @@ Device: STM32F103C8T6
 
 TASK:
 Set LED output in LOW level. 
-Transmit data from LIN from UART2 and receive these data on LIN from UART3. If data is valid, set LED ouput in HIGH level.
+UART3 - master, UART2 - slave
+Transmit data from LIN from UART3 to request data from slave. 
+Slave get data.
+If master receive valid data, then set LED ouput in HIGH level.
